@@ -28,7 +28,18 @@ def get_errors(id, vector):
 def get_overfit_vector(id):
     return json.loads(send_request(id, [0], 'getoverfit'))
 
+
+def submit(id, vector):
+    """
+    used to make official submission of your weight vector
+    returns string "successfully submitted" if properly submitted.
+    """
+    for i in vector: assert 0<=abs(i)<=10
+    assert len(vector) == MAX_DEG
+    return send_request(id, vector, 'submit')
+
 # Replace 'SECRET_KEY' with your team's secret key (Will be sent over email)
 if __name__ == "__main__":
     print(get_errors('SECRET_KEY', get_overfit_vector('SECRET_KEY')))
     print(get_overfit_vector('SECRET_KEY'))
+    print(submit('SECRET_KEY', get_overfit_vector('SECRET_KEY')))

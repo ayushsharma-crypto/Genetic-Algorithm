@@ -139,10 +139,10 @@ def mutation(crossed_popuplation):
                 if curr_vec[j]==0:
                     curr_vec[j] = random.uniform(-0.01,0.01)
                 else:
-                    if j <= 4:
-                        fac = 1 + random.uniform(-0.03, 0.03)
-                    else:
+                    if j > 4:
                         fac = random.uniform(0, 1)
+                    else:
+                        fac = 1 + random.uniform(-0.03, 0.03)                        
                     new_gene = fac*curr_vec[j]
                     if abs(new_gene)<10:
                         curr_vec[j]=new_gene

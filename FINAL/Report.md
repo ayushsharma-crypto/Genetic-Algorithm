@@ -24,7 +24,7 @@ population.
 
 ## Implementation
 
-*  Setup the initial <b>Population/b>.
+*  Setup the initial <b>Population</b>.
 *   Calculate <b>Fitness</b> of initial population.
 *    Until convergence repeat the evolution process as follows:
        * Calculate <b>Selection Percentage</b> of all individual in population.

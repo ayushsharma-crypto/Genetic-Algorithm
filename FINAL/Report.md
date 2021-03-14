@@ -22,19 +22,16 @@ that are present in a generation of a genetic algorithm are referred to as the
 population.
 
 
-Implementation
-----------
+## Implementation
 
-> - Setup the initial <b>Population</b>.
-> - Calculate <b>Fitness</b> of initial population.
-> - Until convergence repeat the evolution process as follows:
-    -  Calculate <b>Selection Percentage</b> of all individual in population.
-    - <b>Select parents</b> from the population based on their selection percentage.
-    - Perform <b>Crossover</b> to generate children.
-    - Perform <b>Mutation</b> on new population i.e. children.
-    - Calculate <b>Fitness</b> for new mutated population.
-
--------
+*  Setup the initial <b>Population/b>.
+*   Calculate <b>Fitness/b> of initial population.
+*    Until convergence repeat the evolution process as follows:
+       * Calculate <b>Selection Percentage</b> of all individual in population.
+       * <b>Select parents</b> from the population based on their selection percentage.
+       * Perform <b>Crossover</b> to generate children.
+       * Perform <b>Mutation</b> on new population i.e. children.
+       * Calculate <b>Fitness</b> for new mutated population.
 
 ```python
 def GA():

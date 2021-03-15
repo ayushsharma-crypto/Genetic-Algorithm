@@ -69,13 +69,13 @@ Iteration Diagrams
 ----
 
 ### First Iteration
-
+<div style="text-align:center;"><img src =./images/One.png></div>
 
 ### Second Iteration
-
+<div style="text-align:center;"><img src =./images/Two.png></div>
 
 ### Third Iteration
-
+<div style="text-align:center;"><img src =./images/Three.png></div>
 
 Fitness Function
 -------
